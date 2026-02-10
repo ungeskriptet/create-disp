@@ -1,2 +1,0 @@
-obj-*/create-disp usr/bin
-create-disp.service lib/systemd/system

@@ -8,14 +8,14 @@ Type=notify
 NotifyAccess=main
 Restart=always
 RestartSec=1
-User=lindroid
+DynamicUser=true
 LimitRTPRIO=10
 LimitMEMLOCK=infinity
 CPUSchedulingPolicy=fifo
 CPUSchedulingPriority=3
 MemoryDenyWriteExecute=no
 LimitNOFILE=65536
-ExecStart=/usr/bin/create-disp
+ExecStart=@CMAKE_INSTALL_PREFIX@/bin/create-disp
 
 [Install]
-WantedBy=display-manager.service
+WantedBy=graphical.target
